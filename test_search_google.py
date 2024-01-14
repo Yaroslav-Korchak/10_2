@@ -11,3 +11,4 @@ def test_search_2(browser_set_up):
     browser.open("https://www.google.com/")
     browser.element('[name="q"]').type('0435968092435#%$#$%^#$%^$#%^').press_enter()
     browser.element('[id="result-stats"]').should(have.text('Результатов: примерно 0'))
+    print('По данному запросу ничего не найдено')
